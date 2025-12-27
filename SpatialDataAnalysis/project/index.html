@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_84ebc53d8cde20af1211e9bc464bf8b4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_84ebc53d8cde20af1211e9bc464bf8b4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_84ebc53d8cde20af1211e9bc464bf8b4 = L.map(
+                "map_84ebc53d8cde20af1211e9bc464bf8b4",
+                {
+                    center: [55.7285, 37.4331],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_af0852eedce25eda8b766e4e7b5b2374 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_af0852eedce25eda8b766e4e7b5b2374.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+            var marker_3a2a4ba32bce6c4f9e0110c53d8fef17 = L.marker(
+                [55.7285, 37.4331],
+                {
+}
+            ).addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+            var icon_d68c745d81c066c6ebfa6c6ce5a40733 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c525f62a7396b2dd5bd23dba754b08f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c05d273c51a992d74ba34b01015b394a = $(`<div id="html_c05d273c51a992d74ba34b01015b394a" style="width: 100.0%; height: 100.0%;"><b>ЖК "Среда на Кутузовском"</b><br>ГОРОД МОСКВА, Район Кунцево</div>`)[0];
+                popup_c525f62a7396b2dd5bd23dba754b08f2.setContent(html_c05d273c51a992d74ba34b01015b394a);
+            
+        
+
+        marker_3a2a4ba32bce6c4f9e0110c53d8fef17.bindPopup(popup_c525f62a7396b2dd5bd23dba754b08f2)
+        ;
+
+        
+    
+    
+                marker_3a2a4ba32bce6c4f9e0110c53d8fef17.setIcon(icon_d68c745d81c066c6ebfa6c6ce5a40733);
+            
+    
+        function geo_json_64ecface86bec7385a0bb1e461a07d75_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#3186cc", "fillOpacity": 0.1, "weight": 2};
+            }
+        }
+
+        function geo_json_64ecface86bec7385a0bb1e461a07d75_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_64ecface86bec7385a0bb1e461a07d75 = L.geoJson(null, {
+                onEachFeature: geo_json_64ecface86bec7385a0bb1e461a07d75_onEachFeature,
+            
+                style: geo_json_64ecface86bec7385a0bb1e461a07d75_styler,
+            ...{
+}
+        });
+
+        function geo_json_64ecface86bec7385a0bb1e461a07d75_add (data) {
+            geo_json_64ecface86bec7385a0bb1e461a07d75
+                .addData(data);
+        }
+            geo_json_64ecface86bec7385a0bb1e461a07d75_add({"bbox": [37.4171835909947, 55.719518011121245, 37.44901661263156, 55.73748197411729], "features": [{"bbox": [37.4171835909947, 55.719518011121245, 37.44901661263156, 55.73748197411729], "geometry": {"coordinates": [[[37.44901661263156, 55.728702007725445], [37.44897487817004, 55.7278206451311], [37.44878026736038, 55.726945834738835], [37.448434664437684, 55.72608600079426], [37.44794140710265, 55.72524942277434], [37.44730525401829, 55.72444415569742], [37.44653233866182, 55.723677952613826], [37.44563010998821, 55.72295819002096], [37.444607260487146, 55.722291796917965], [37.44347364233415, 55.72168518817977], [37.44224017244848, 55.721144202888034], [37.44091872737454, 55.72067404820856], [37.43952202899834, 55.72027924935179], [37.438063522196096, 55.71996360609368], [37.436557245586805, 55.7197301562721], [37.43501769662451, 55.71958114660686], [37.433459692318344, 55.719518011121245], [37.43189822690862, 55.71954135737074], [37.43034832785546, 55.719650960610124], [37.42882491151184, 55.71984576595451], [37.42734263985568, 55.72012389851312], [37.42591577964624, 55.7204826814], [37.42455806534718, 55.72091866144921], [37.4232825671243, 55.7214276423897], [37.422101565178906, 55.722004725163494], [37.42102643161897, 55.722644355002366], [37.42006752100073, 55.723340374813624], [37.41923407059231, 55.724086084365275], [37.418534111320525, 55.724874304704514], [37.41797439026213, 55.72569744719371], [37.41756030543224, 55.726547586502505], [37.417295853506936, 55.727416536857014], [37.4171835909947, 55.7282959308142], [37.417224609243576, 55.72917729980559], [37.417418523539, 55.73005215567582], [37.41776347641249, 55.730912072431586], [37.418256155144405, 55.73174876741351], [37.418891823307106, 55.732554181108476], [37.41966436605865, 55.73332055483173], [37.42056634876306, 55.73404050552827], [37.42158908838313, 55.73470709697022], [37.422722736965994, 55.73531390666059], [37.42395637642301, 55.73585508779529], [37.42527812369322, 55.73632542568233], [37.42667524527742, 55.73672038807074], [37.42813428003573, 55.73703616890011], [37.4296411690601, 55.7372697250458], [37.431181391361704, 55.73741880570198], [37.432740104055384, 55.73748197411729], [37.434302285677866, 55.73745862147074], [37.43585288124536, 55.737348972753374], [37.43737694763824, 55.737154084597805], [37.43885979789756, 55.73687583507716], [37.44028714302865, 55.736516905572195], [37.44164522993259, 55.73608075488331], [37.442920974124576, 55.73557158583915], [37.444102085950874, 55.73499430472639], [37.44517718908084, 55.73435447393534], [37.44613593012764, 55.73365825828113], [37.44696907833972, 55.732912365521926], [37.44766861440348, 55.73212398165107], [37.44822780750582, 55.73130070159065], [37.44864127992068, 55.73045045595776], [37.448905058506746, 55.7295814346123], [37.44901661263156, 55.728702007725445]]], "type": "Polygon"}, "id": "0", "properties": {"address": "\u0413\u041e\u0420\u041e\u0414 \u041c\u041e\u0421\u041a\u0412\u0410, \u0420\u0430\u0439\u043e\u043d \u041a\u0443\u043d\u0446\u0435\u0432\u043e", "class": "\u0411\u0438\u0437\u043d\u0435\u0441", "developer": "\u041f\u0418\u041a", "flats_total": 785, "floors_max": 46, "floors_min": 14, "latitude": 55.7285, "living_square": 41893.8, "longitude": 37.4331, "name": "\u0416\u041a \"\u0421\u0440\u0435\u0434\u0430 \u043d\u0430 \u041a\u0443\u0442\u0443\u0437\u043e\u0432\u0441\u043a\u043e\u043c\"", "parking_cnt": 347, "price_avg": 502954, "price_min": 19131904}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_64ecface86bec7385a0bb1e461a07d75.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+            var feature_group_a7fc9315287275807311436ce901a99b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_8eb75a1b41eccde70da7d34511c3a214 = L.marker(
+                [55.732134999999985, 37.4463777],
+                {
+}
+            ).addTo(feature_group_a7fc9315287275807311436ce901a99b);
+        
+    
+            var icon_91fc15a84e81ba0f3aae46eb2b0ffec7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b166e84f03c45eea3d4292608e68bb4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39533c7c9cb377b4d68a46d9c0467b07 = $(`<div id="html_39533c7c9cb377b4d68a46d9c0467b07" style="width: 100.0%; height: 100.0%;">         <b>Зерно</b><br>         Тип: Кафе<br>         Расстояние до ЖК: 927 м         </div>`)[0];
+                popup_4b166e84f03c45eea3d4292608e68bb4.setContent(html_39533c7c9cb377b4d68a46d9c0467b07);
+            
+        
+
+        marker_8eb75a1b41eccde70da7d34511c3a214.bindPopup(popup_4b166e84f03c45eea3d4292608e68bb4)
+        ;
+
+        
+    
+    
+                marker_8eb75a1b41eccde70da7d34511c3a214.setIcon(icon_91fc15a84e81ba0f3aae46eb2b0ffec7);
+            
+    
+            feature_group_a7fc9315287275807311436ce901a99b.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+            var feature_group_fed98741a846e611c8e3a809c11dc7c1 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_5dba70ea2278cfe7e69142dda0ff3393 = L.marker(
+                [55.72415759999999, 37.4460513],
+                {
+}
+            ).addTo(feature_group_fed98741a846e611c8e3a809c11dc7c1);
+        
+    
+            var icon_2ebe15bfe726eab04fb57fce1db0b32c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2908ee9cc68ef4de8dbf3781af9296dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e998f15067374d4d76e7ad875431e05 = $(`<div id="html_1e998f15067374d4d76e7ad875431e05" style="width: 100.0%; height: 100.0%;">         <b>Мать и дитя</b><br>         Тип: Поликлиника<br>         Расстояние до ЖК: 946 м         </div>`)[0];
+                popup_2908ee9cc68ef4de8dbf3781af9296dc.setContent(html_1e998f15067374d4d76e7ad875431e05);
+            
+        
+
+        marker_5dba70ea2278cfe7e69142dda0ff3393.bindPopup(popup_2908ee9cc68ef4de8dbf3781af9296dc)
+        ;
+
+        
+    
+    
+                marker_5dba70ea2278cfe7e69142dda0ff3393.setIcon(icon_2ebe15bfe726eab04fb57fce1db0b32c);
+            
+    
+            var marker_281e90b40d4d4c67cd7386b082682cbd = L.marker(
+                [55.7215291, 37.4354683],
+                {
+}
+            ).addTo(feature_group_fed98741a846e611c8e3a809c11dc7c1);
+        
+    
+            var icon_be5f09d4c8c944204d0d5b4b58217372 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3fd0005e859c145ac41053ddb0f2965 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c273b68fca9a62b3e2fcc3bb65e4e6fa = $(`<div id="html_c273b68fca9a62b3e2fcc3bb65e4e6fa" style="width: 100.0%; height: 100.0%;">         <b>Можайка 10</b><br>         Тип: Поликлиника<br>         Расстояние до ЖК: 790 м         </div>`)[0];
+                popup_d3fd0005e859c145ac41053ddb0f2965.setContent(html_c273b68fca9a62b3e2fcc3bb65e4e6fa);
+            
+        
+
+        marker_281e90b40d4d4c67cd7386b082682cbd.bindPopup(popup_d3fd0005e859c145ac41053ddb0f2965)
+        ;
+
+        
+    
+    
+                marker_281e90b40d4d4c67cd7386b082682cbd.setIcon(icon_be5f09d4c8c944204d0d5b4b58217372);
+            
+    
+            var marker_f00c66d3dd2479fd273a316fcf07fb62 = L.marker(
+                [55.73576250000001, 37.4395153],
+                {
+}
+            ).addTo(feature_group_fed98741a846e611c8e3a809c11dc7c1);
+        
+    
+            var icon_df5f9ad12bb0524183dccb15e40948b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b7f9b8b921a25ac96d411e739af8fe4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc81fb57efdee7b37a1df39748a06ecb = $(`<div id="html_dc81fb57efdee7b37a1df39748a06ecb" style="width: 100.0%; height: 100.0%;">         <b>Династия</b><br>         Тип: Поликлиника<br>         Расстояние до ЖК: 903 м         </div>`)[0];
+                popup_8b7f9b8b921a25ac96d411e739af8fe4.setContent(html_dc81fb57efdee7b37a1df39748a06ecb);
+            
+        
+
+        marker_f00c66d3dd2479fd273a316fcf07fb62.bindPopup(popup_8b7f9b8b921a25ac96d411e739af8fe4)
+        ;
+
+        
+    
+    
+                marker_f00c66d3dd2479fd273a316fcf07fb62.setIcon(icon_df5f9ad12bb0524183dccb15e40948b4);
+            
+    
+            var marker_5a6966628db6cde9c7c4bff6467a48dd = L.marker(
+                [55.721264999999995, 37.43159760000001],
+                {
+}
+            ).addTo(feature_group_fed98741a846e611c8e3a809c11dc7c1);
+        
+    
+            var icon_a0b29df635e266224bffc98cbbecf667 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e222be6b3137c8ea9c7d83a670e6685b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8bcd7df13390fa83586809cc3d75fd90 = $(`<div id="html_8bcd7df13390fa83586809cc3d75fd90" style="width: 100.0%; height: 100.0%;">         <b>Поликлиника</b><br>         Тип: Поликлиника<br>         Расстояние до ЖК: 797 м         </div>`)[0];
+                popup_e222be6b3137c8ea9c7d83a670e6685b.setContent(html_8bcd7df13390fa83586809cc3d75fd90);
+            
+        
+
+        marker_5a6966628db6cde9c7c4bff6467a48dd.bindPopup(popup_e222be6b3137c8ea9c7d83a670e6685b)
+        ;
+
+        
+    
+    
+                marker_5a6966628db6cde9c7c4bff6467a48dd.setIcon(icon_a0b29df635e266224bffc98cbbecf667);
+            
+    
+            var marker_c78ab02a91755aba6d6d5ffdd3e9ff8d = L.marker(
+                [55.73417870000001, 37.42192840000001],
+                {
+}
+            ).addTo(feature_group_fed98741a846e611c8e3a809c11dc7c1);
+        
+    
+            var icon_f3da1cbfbd90f7bca58fb7f7dfa306ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "medkit",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1df78eeb9732f4305a94c8eb8201760a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61a9000968cc11363e6ea8b9406b2368 = $(`<div id="html_61a9000968cc11363e6ea8b9406b2368" style="width: 100.0%; height: 100.0%;">         <b>Поликлиника №162</b><br>         Тип: Поликлиника<br>         Расстояние до ЖК: 918 м         </div>`)[0];
+                popup_1df78eeb9732f4305a94c8eb8201760a.setContent(html_61a9000968cc11363e6ea8b9406b2368);
+            
+        
+
+        marker_c78ab02a91755aba6d6d5ffdd3e9ff8d.bindPopup(popup_1df78eeb9732f4305a94c8eb8201760a)
+        ;
+
+        
+    
+    
+                marker_c78ab02a91755aba6d6d5ffdd3e9ff8d.setIcon(icon_f3da1cbfbd90f7bca58fb7f7dfa306ed);
+            
+    
+            feature_group_fed98741a846e611c8e3a809c11dc7c1.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+            var feature_group_a6e51073f1d197e2dd8a1d0c3934957f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_96a2835b0f978380bac9ffe17d13e3ec = L.marker(
+                [55.728349079769075, 37.438598637670545],
+                {
+}
+            ).addTo(feature_group_a6e51073f1d197e2dd8a1d0c3934957f);
+        
+    
+            var icon_a67916af711aeb3e76b56a43790b8f49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "dumbbell",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52b8f99572bb2d562b30f46c23d0743d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_53118e6e616ae6657cc0d258bd11fd66 = $(`<div id="html_53118e6e616ae6657cc0d258bd11fd66" style="width: 100.0%; height: 100.0%;">         <b>World Class</b><br>         Тип: Спортзал<br>         Расстояние до ЖК: 298 м         </div>`)[0];
+                popup_52b8f99572bb2d562b30f46c23d0743d.setContent(html_53118e6e616ae6657cc0d258bd11fd66);
+            
+        
+
+        marker_96a2835b0f978380bac9ffe17d13e3ec.bindPopup(popup_52b8f99572bb2d562b30f46c23d0743d)
+        ;
+
+        
+    
+    
+                marker_96a2835b0f978380bac9ffe17d13e3ec.setIcon(icon_a67916af711aeb3e76b56a43790b8f49);
+            
+    
+            feature_group_a6e51073f1d197e2dd8a1d0c3934957f.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+            var feature_group_f6a9dfd7d9c74efbe8cfd8a93fe0b320 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_0a45fd913b6438f8bbe84e52e5df1e26 = L.marker(
+                [55.72208870324704, 37.43234920853397],
+                {
+}
+            ).addTo(feature_group_f6a9dfd7d9c74efbe8cfd8a93fe0b320);
+        
+    
+            var icon_36cb32a7744fd51bf4c088b4ff028480 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b869d6efe7edd238076818a359d52ede = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d21adc109cf608fb848bfeb56c1ff844 = $(`<div id="html_d21adc109cf608fb848bfeb56c1ff844" style="width: 100.0%; height: 100.0%;">         <b>Больница №71</b><br>         Тип: Больница<br>         Расстояние до ЖК: 578 м         </div>`)[0];
+                popup_b869d6efe7edd238076818a359d52ede.setContent(html_d21adc109cf608fb848bfeb56c1ff844);
+            
+        
+
+        marker_0a45fd913b6438f8bbe84e52e5df1e26.bindPopup(popup_b869d6efe7edd238076818a359d52ede)
+        ;
+
+        
+    
+    
+                marker_0a45fd913b6438f8bbe84e52e5df1e26.setIcon(icon_36cb32a7744fd51bf4c088b4ff028480);
+            
+    
+            feature_group_f6a9dfd7d9c74efbe8cfd8a93fe0b320.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+            var feature_group_00bc315c95df1269330bc5b617c176d7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_77b0ce8ba033753362cca5f8a4e26b1b = L.marker(
+                [55.73077239999999, 37.426884],
+                {
+}
+            ).addTo(feature_group_00bc315c95df1269330bc5b617c176d7);
+        
+    
+            var icon_99d2f0de55956484b3079f86eb8f43b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "child",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_245e6f36ef4b59074d2c2a690db7913f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32f5bbb945c95ce9971885f35dd81e89 = $(`<div id="html_32f5bbb945c95ce9971885f35dd81e89" style="width: 100.0%; height: 100.0%;">         <b>Детский сад №2069</b><br>         Тип: Детский сад<br>         Расстояние до ЖК: 465 м         </div>`)[0];
+                popup_245e6f36ef4b59074d2c2a690db7913f.setContent(html_32f5bbb945c95ce9971885f35dd81e89);
+            
+        
+
+        marker_77b0ce8ba033753362cca5f8a4e26b1b.bindPopup(popup_245e6f36ef4b59074d2c2a690db7913f)
+        ;
+
+        
+    
+    
+                marker_77b0ce8ba033753362cca5f8a4e26b1b.setIcon(icon_99d2f0de55956484b3079f86eb8f43b7);
+            
+    
+            var marker_cab08bb488d4aea344746b7745ab6165 = L.marker(
+                [55.7247929, 37.4408259],
+                {
+}
+            ).addTo(feature_group_00bc315c95df1269330bc5b617c176d7);
+        
+    
+            var icon_6f3fc806a297866c7bfc2b4ff12d8501 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "child",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ffca62c347a2ac5fb7c6ef59f91b45f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38281e750573439a63e95509bcb29b3d = $(`<div id="html_38281e750573439a63e95509bcb29b3d" style="width: 100.0%; height: 100.0%;">         <b>Детский сад № 1284</b><br>         Тип: Детский сад<br>         Расстояние до ЖК: 637 м         </div>`)[0];
+                popup_7ffca62c347a2ac5fb7c6ef59f91b45f.setContent(html_38281e750573439a63e95509bcb29b3d);
+            
+        
+
+        marker_cab08bb488d4aea344746b7745ab6165.bindPopup(popup_7ffca62c347a2ac5fb7c6ef59f91b45f)
+        ;
+
+        
+    
+    
+                marker_cab08bb488d4aea344746b7745ab6165.setIcon(icon_6f3fc806a297866c7bfc2b4ff12d8501);
+            
+    
+            var marker_d62d99077fe8125427f740e79713f998 = L.marker(
+                [55.723700699999995, 37.4403719],
+                {
+}
+            ).addTo(feature_group_00bc315c95df1269330bc5b617c176d7);
+        
+    
+            var icon_b2769cbf001397adf505f2d01cbed64c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "child",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c3881f2b432ff12a4530db0817a848d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71e1029097541811cc8ec0cc61b7ab25 = $(`<div id="html_71e1029097541811cc8ec0cc61b7ab25" style="width: 100.0%; height: 100.0%;">         <b>Детский сад № 943</b><br>         Тип: Детский сад<br>         Расстояние до ЖК: 703 м         </div>`)[0];
+                popup_0c3881f2b432ff12a4530db0817a848d.setContent(html_71e1029097541811cc8ec0cc61b7ab25);
+            
+        
+
+        marker_d62d99077fe8125427f740e79713f998.bindPopup(popup_0c3881f2b432ff12a4530db0817a848d)
+        ;
+
+        
+    
+    
+                marker_d62d99077fe8125427f740e79713f998.setIcon(icon_b2769cbf001397adf505f2d01cbed64c);
+            
+    
+            var marker_e91dae1e0527f7a5eef754a24ceef1c9 = L.marker(
+                [55.736603599039995, 37.43027149907162],
+                {
+}
+            ).addTo(feature_group_00bc315c95df1269330bc5b617c176d7);
+        
+    
+            var icon_bb5b568662491c05546740cce6f7c1e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "child",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5db91b2570ff5b887b15093e1324e215 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5da7259d15d552452dbb60e824f12244 = $(`<div id="html_5da7259d15d552452dbb60e824f12244" style="width: 100.0%; height: 100.0%;">         <b>Детский сад</b><br>         Тип: Детский сад<br>         Расстояние до ЖК: 855 м         </div>`)[0];
+                popup_5db91b2570ff5b887b15093e1324e215.setContent(html_5da7259d15d552452dbb60e824f12244);
+            
+        
+
+        marker_e91dae1e0527f7a5eef754a24ceef1c9.bindPopup(popup_5db91b2570ff5b887b15093e1324e215)
+        ;
+
+        
+    
+    
+                marker_e91dae1e0527f7a5eef754a24ceef1c9.setIcon(icon_bb5b568662491c05546740cce6f7c1e6);
+            
+    
+            var marker_858518a0df178035410f2c4d446435fb = L.marker(
+                [55.722940521893825, 37.42727203002273],
+                {
+}
+            ).addTo(feature_group_00bc315c95df1269330bc5b617c176d7);
+        
+    
+            var icon_4001955d9a64bb11f9ce3664b01d011c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "child",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8af14a8dfd6612079f9b0b3f100b3c44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a82c1b61bd2f6251466e18692d23b10 = $(`<div id="html_2a82c1b61bd2f6251466e18692d23b10" style="width: 100.0%; height: 100.0%;">         <b>Детский сад № 1149</b><br>         Тип: Детский сад<br>         Расстояние до ЖК: 658 м         </div>`)[0];
+                popup_8af14a8dfd6612079f9b0b3f100b3c44.setContent(html_2a82c1b61bd2f6251466e18692d23b10);
+            
+        
+
+        marker_858518a0df178035410f2c4d446435fb.bindPopup(popup_8af14a8dfd6612079f9b0b3f100b3c44)
+        ;
+
+        
+    
+    
+                marker_858518a0df178035410f2c4d446435fb.setIcon(icon_4001955d9a64bb11f9ce3664b01d011c);
+            
+    
+            var marker_9fc3cb35d6455ae61c6dab30e9cf8871 = L.marker(
+                [55.72462424471059, 37.442382317179465],
+                {
+}
+            ).addTo(feature_group_00bc315c95df1269330bc5b617c176d7);
+        
+    
+            var icon_9661de4cdbecef8b9a2215435a651f37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "child",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d470ecf4c457e0c6c675c071ce77fd4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3fae6de407a62019236b4fe3cbbf30a1 = $(`<div id="html_3fae6de407a62019236b4fe3cbbf30a1" style="width: 100.0%; height: 100.0%;">         <b>Детский сад</b><br>         Тип: Детский сад<br>         Расстояние до ЖК: 693 м         </div>`)[0];
+                popup_d470ecf4c457e0c6c675c071ce77fd4a.setContent(html_3fae6de407a62019236b4fe3cbbf30a1);
+            
+        
+
+        marker_9fc3cb35d6455ae61c6dab30e9cf8871.bindPopup(popup_d470ecf4c457e0c6c675c071ce77fd4a)
+        ;
+
+        
+    
+    
+                marker_9fc3cb35d6455ae61c6dab30e9cf8871.setIcon(icon_9661de4cdbecef8b9a2215435a651f37);
+            
+    
+            var marker_ff900ad4358826c4c1d9f00804eb9d41 = L.marker(
+                [55.72932605, 37.420393149999995],
+                {
+}
+            ).addTo(feature_group_00bc315c95df1269330bc5b617c176d7);
+        
+    
+            var icon_b02a0151f136cb24d05ecc82d522a36c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "child",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1585ce1c9f7fe6039a3d34be5b23198e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_036cacff7958b75a1daef7b1cd6a62b5 = $(`<div id="html_036cacff7958b75a1daef7b1cd6a62b5" style="width: 100.0%; height: 100.0%;">         <b>Школа № 806. Дошкольное образование. Отделение 9</b><br>         Тип: Детский сад<br>         Расстояние до ЖК: 789 м         </div>`)[0];
+                popup_1585ce1c9f7fe6039a3d34be5b23198e.setContent(html_036cacff7958b75a1daef7b1cd6a62b5);
+            
+        
+
+        marker_ff900ad4358826c4c1d9f00804eb9d41.bindPopup(popup_1585ce1c9f7fe6039a3d34be5b23198e)
+        ;
+
+        
+    
+    
+                marker_ff900ad4358826c4c1d9f00804eb9d41.setIcon(icon_b02a0151f136cb24d05ecc82d522a36c);
+            
+    
+            var marker_dc40ea6089a4acc4fbc121eef3653107 = L.marker(
+                [55.72860884555377, 37.42727270328294],
+                {
+}
+            ).addTo(feature_group_00bc315c95df1269330bc5b617c176d7);
+        
+    
+            var icon_fa97f969081b9d41d40a8ceeef0f5419 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "child",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85605fd99dd2ce431b793437dfb828b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2052238a062464cdd338f2613e770d7a = $(`<div id="html_2052238a062464cdd338f2613e770d7a" style="width: 100.0%; height: 100.0%;">         <b>Детский сад №764</b><br>         Тип: Детский сад<br>         Расстояние до ЖК: 345 м         </div>`)[0];
+                popup_85605fd99dd2ce431b793437dfb828b1.setContent(html_2052238a062464cdd338f2613e770d7a);
+            
+        
+
+        marker_dc40ea6089a4acc4fbc121eef3653107.bindPopup(popup_85605fd99dd2ce431b793437dfb828b1)
+        ;
+
+        
+    
+    
+                marker_dc40ea6089a4acc4fbc121eef3653107.setIcon(icon_fa97f969081b9d41d40a8ceeef0f5419);
+            
+    
+            var marker_be1d750c19449292745f5cb2ec099320 = L.marker(
+                [55.73185642161804, 37.43707117285529],
+                {
+}
+            ).addTo(feature_group_00bc315c95df1269330bc5b617c176d7);
+        
+    
+            var icon_fd498dd174e237b85779889e497e226f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "child",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e36d6b579cc164ba426ed6ff48d4078 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b15fa1bbbcff34e8acdb599579ae4429 = $(`<div id="html_b15fa1bbbcff34e8acdb599579ae4429" style="width: 100.0%; height: 100.0%;">         <b>Школа № 887. Корпус "Сказка"</b><br>         Тип: Детский сад<br>         Расстояние до ЖК: 371 м         </div>`)[0];
+                popup_8e36d6b579cc164ba426ed6ff48d4078.setContent(html_b15fa1bbbcff34e8acdb599579ae4429);
+            
+        
+
+        marker_be1d750c19449292745f5cb2ec099320.bindPopup(popup_8e36d6b579cc164ba426ed6ff48d4078)
+        ;
+
+        
+    
+    
+                marker_be1d750c19449292745f5cb2ec099320.setIcon(icon_fd498dd174e237b85779889e497e226f);
+            
+    
+            feature_group_00bc315c95df1269330bc5b617c176d7.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+            var feature_group_c751b517f456e6e9645ef76a69f31606 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d488185220740434bb389c43eb8454a3 = L.marker(
+                [55.73080100000001, 37.4464724],
+                {
+}
+            ).addTo(feature_group_c751b517f456e6e9645ef76a69f31606);
+        
+    
+            var icon_f7fdf63fdc0f9413a862f141e583d0eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "subway",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1c8f3840fae921e6d9c623a6caef966 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_070ea53987b3f7fb3ce81023eac3b375 = $(`<div id="html_070ea53987b3f7fb3ce81023eac3b375" style="width: 100.0%; height: 100.0%;">         <b>Метро</b><br>         Тип: Метро<br>         Расстояние до ЖК: 878 м         </div>`)[0];
+                popup_c1c8f3840fae921e6d9c623a6caef966.setContent(html_070ea53987b3f7fb3ce81023eac3b375);
+            
+        
+
+        marker_d488185220740434bb389c43eb8454a3.bindPopup(popup_c1c8f3840fae921e6d9c623a6caef966)
+        ;
+
+        
+    
+    
+                marker_d488185220740434bb389c43eb8454a3.setIcon(icon_f7fdf63fdc0f9413a862f141e583d0eb);
+            
+    
+            var marker_c7f8e0de13a5313377e77dfff91098e5 = L.marker(
+                [55.7307113, 37.4454912],
+                {
+}
+            ).addTo(feature_group_c751b517f456e6e9645ef76a69f31606);
+        
+    
+            var icon_17ae257eacc2b51e2f743921f1a5fec4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "subway",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_015e2165b79f37cb9686647a85686928 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe87ee87d4124e5a4579ca7cdebd4c82 = $(`<div id="html_fe87ee87d4124e5a4579ca7cdebd4c82" style="width: 100.0%; height: 100.0%;">         <b>Метро</b><br>         Тип: Метро<br>         Расстояние до ЖК: 816 м         </div>`)[0];
+                popup_015e2165b79f37cb9686647a85686928.setContent(html_fe87ee87d4124e5a4579ca7cdebd4c82);
+            
+        
+
+        marker_c7f8e0de13a5313377e77dfff91098e5.bindPopup(popup_015e2165b79f37cb9686647a85686928)
+        ;
+
+        
+    
+    
+                marker_c7f8e0de13a5313377e77dfff91098e5.setIcon(icon_17ae257eacc2b51e2f743921f1a5fec4);
+            
+    
+            var marker_a4ba670fbaa46eb44d062b92c9c37fb1 = L.marker(
+                [55.7305737, 37.4456438],
+                {
+}
+            ).addTo(feature_group_c751b517f456e6e9645ef76a69f31606);
+        
+    
+            var icon_fbaa67196abe23f585022fef799acbb1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "subway",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d5353c540dadac19ea1f4adbacbb6f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02d65476fae7c0d82879359640c70b3f = $(`<div id="html_02d65476fae7c0d82879359640c70b3f" style="width: 100.0%; height: 100.0%;">         <b>Метро</b><br>         Тип: Метро<br>         Расстояние до ЖК: 821 м         </div>`)[0];
+                popup_2d5353c540dadac19ea1f4adbacbb6f6.setContent(html_02d65476fae7c0d82879359640c70b3f);
+            
+        
+
+        marker_a4ba670fbaa46eb44d062b92c9c37fb1.bindPopup(popup_2d5353c540dadac19ea1f4adbacbb6f6)
+        ;
+
+        
+    
+    
+                marker_a4ba670fbaa46eb44d062b92c9c37fb1.setIcon(icon_fbaa67196abe23f585022fef799acbb1);
+            
+    
+            var marker_7612061b4ac95b4acfd97072d97e906b = L.marker(
+                [55.73068949999999, 37.4465201],
+                {
+}
+            ).addTo(feature_group_c751b517f456e6e9645ef76a69f31606);
+        
+    
+            var icon_5e525be1dd80d6f7c2f67aab383947b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "subway",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_118cc283c6102460f3a1ab312b84848a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cda3016132b509d6a3ed0c6f45c1ddaa = $(`<div id="html_cda3016132b509d6a3ed0c6f45c1ddaa" style="width: 100.0%; height: 100.0%;">         <b>Метро</b><br>         Тип: Метро<br>         Расстояние до ЖК: 877 м         </div>`)[0];
+                popup_118cc283c6102460f3a1ab312b84848a.setContent(html_cda3016132b509d6a3ed0c6f45c1ddaa);
+            
+        
+
+        marker_7612061b4ac95b4acfd97072d97e906b.bindPopup(popup_118cc283c6102460f3a1ab312b84848a)
+        ;
+
+        
+    
+    
+                marker_7612061b4ac95b4acfd97072d97e906b.setIcon(icon_5e525be1dd80d6f7c2f67aab383947b3);
+            
+    
+            var marker_4f4fefccd8b6cc4c82c8399a76fc082a = L.marker(
+                [55.73034899999999, 37.4455335],
+                {
+}
+            ).addTo(feature_group_c751b517f456e6e9645ef76a69f31606);
+        
+    
+            var icon_48af4cd3ede9be72bca41d23953a35a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "subway",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e4e959a23bb6cdb1b01a0eb3e3ddacb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ed0e91f6e9e91caf5519c76e68f6c531 = $(`<div id="html_ed0e91f6e9e91caf5519c76e68f6c531" style="width: 100.0%; height: 100.0%;">         <b>Метро</b><br>         Тип: Метро<br>         Расстояние до ЖК: 808 м         </div>`)[0];
+                popup_6e4e959a23bb6cdb1b01a0eb3e3ddacb.setContent(html_ed0e91f6e9e91caf5519c76e68f6c531);
+            
+        
+
+        marker_4f4fefccd8b6cc4c82c8399a76fc082a.bindPopup(popup_6e4e959a23bb6cdb1b01a0eb3e3ddacb)
+        ;
+
+        
+    
+    
+                marker_4f4fefccd8b6cc4c82c8399a76fc082a.setIcon(icon_48af4cd3ede9be72bca41d23953a35a7);
+            
+    
+            var marker_8342363c88095d84c6537429886cba73 = L.marker(
+                [55.72756139999999, 37.4459012],
+                {
+}
+            ).addTo(feature_group_c751b517f456e6e9645ef76a69f31606);
+        
+    
+            var icon_61a232a471e42dd930cfdf04e9ce7257 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "subway",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e8f24d6522a961dc9c3fedc9eb54b09 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbdac80e9a9443a58b4216c811b37b91 = $(`<div id="html_cbdac80e9a9443a58b4216c811b37b91" style="width: 100.0%; height: 100.0%;">         <b>Метро</b><br>         Тип: Метро<br>         Расстояние до ЖК: 811 м         </div>`)[0];
+                popup_7e8f24d6522a961dc9c3fedc9eb54b09.setContent(html_cbdac80e9a9443a58b4216c811b37b91);
+            
+        
+
+        marker_8342363c88095d84c6537429886cba73.bindPopup(popup_7e8f24d6522a961dc9c3fedc9eb54b09)
+        ;
+
+        
+    
+    
+                marker_8342363c88095d84c6537429886cba73.setIcon(icon_61a232a471e42dd930cfdf04e9ce7257);
+            
+    
+            var marker_a7b3c69e5dedcd44d2984f9fc36c1473 = L.marker(
+                [55.727962, 37.4467814],
+                {
+}
+            ).addTo(feature_group_c751b517f456e6e9645ef76a69f31606);
+        
+    
+            var icon_4e9bb7dbaac8c89741979f1551283b8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "subway",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1aab97103cc73c7acbe9fb2594f90184 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b2082b646f1ba30ca03347adb95c4b39 = $(`<div id="html_b2082b646f1ba30ca03347adb95c4b39" style="width: 100.0%; height: 100.0%;">         <b>Метро</b><br>         Тип: Метро<br>         Расстояние до ЖК: 861 м         </div>`)[0];
+                popup_1aab97103cc73c7acbe9fb2594f90184.setContent(html_b2082b646f1ba30ca03347adb95c4b39);
+            
+        
+
+        marker_a7b3c69e5dedcd44d2984f9fc36c1473.bindPopup(popup_1aab97103cc73c7acbe9fb2594f90184)
+        ;
+
+        
+    
+    
+                marker_a7b3c69e5dedcd44d2984f9fc36c1473.setIcon(icon_4e9bb7dbaac8c89741979f1551283b8a);
+            
+    
+            feature_group_c751b517f456e6e9645ef76a69f31606.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+            var feature_group_351602b9176930236ec230af49c212c5 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_e4fef5598989506b0c6611001c19ec10 = L.marker(
+                [55.721575200000004, 37.4287987],
+                {
+}
+            ).addTo(feature_group_351602b9176930236ec230af49c212c5);
+        
+    
+            var icon_60fa96ef45164a75f726666c54d25c7d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb6b3685e49549d923cc21fa28a79be4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8bcc9a0c70ae2971fbdc3e83b47c3f01 = $(`<div id="html_8bcc9a0c70ae2971fbdc3e83b47c3f01" style="width: 100.0%; height: 100.0%;">         <b>Школа №587</b><br>         Тип: Школа<br>         Расстояние до ЖК: 817 м         </div>`)[0];
+                popup_bb6b3685e49549d923cc21fa28a79be4.setContent(html_8bcc9a0c70ae2971fbdc3e83b47c3f01);
+            
+        
+
+        marker_e4fef5598989506b0c6611001c19ec10.bindPopup(popup_bb6b3685e49549d923cc21fa28a79be4)
+        ;
+
+        
+    
+    
+                marker_e4fef5598989506b0c6611001c19ec10.setIcon(icon_60fa96ef45164a75f726666c54d25c7d);
+            
+    
+            var marker_ca30f8850933ef4e65c64a91fb3999f3 = L.marker(
+                [55.72443839999999, 37.4270222],
+                {
+}
+            ).addTo(feature_group_351602b9176930236ec230af49c212c5);
+        
+    
+            var icon_db76ec9afa76329df10f1fc3b1ef1288 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8b50f26d9f4f782b49aebc2f0f8bce1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94e6dad92e99fe3bc131d4e4e20c8f92 = $(`<div id="html_94e6dad92e99fe3bc131d4e4e20c8f92" style="width: 100.0%; height: 100.0%;">         <b>Школа № 802</b><br>         Тип: Школа<br>         Расстояние до ЖК: 592 м         </div>`)[0];
+                popup_c8b50f26d9f4f782b49aebc2f0f8bce1.setContent(html_94e6dad92e99fe3bc131d4e4e20c8f92);
+            
+        
+
+        marker_ca30f8850933ef4e65c64a91fb3999f3.bindPopup(popup_c8b50f26d9f4f782b49aebc2f0f8bce1)
+        ;
+
+        
+    
+    
+                marker_ca30f8850933ef4e65c64a91fb3999f3.setIcon(icon_db76ec9afa76329df10f1fc3b1ef1288);
+            
+    
+            var marker_de884b1521e526f235fbab33158a1ca9 = L.marker(
+                [55.7351452, 37.4406248],
+                {
+}
+            ).addTo(feature_group_351602b9176930236ec230af49c212c5);
+        
+    
+            var icon_ac04697c7b3934d5075897500e03ba83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2709996de7ccffee66e5a3effeff835 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c86f5a218a87e0faafd39691f857625 = $(`<div id="html_6c86f5a218a87e0faafd39691f857625" style="width: 100.0%; height: 100.0%;">         <b>Школа № 887. Отделение дополнительного образования детей</b><br>         Тип: Школа<br>         Расстояние до ЖК: 878 м         </div>`)[0];
+                popup_f2709996de7ccffee66e5a3effeff835.setContent(html_6c86f5a218a87e0faafd39691f857625);
+            
+        
+
+        marker_de884b1521e526f235fbab33158a1ca9.bindPopup(popup_f2709996de7ccffee66e5a3effeff835)
+        ;
+
+        
+    
+    
+                marker_de884b1521e526f235fbab33158a1ca9.setIcon(icon_ac04697c7b3934d5075897500e03ba83);
+            
+    
+            var marker_776503870678688d5467dee89398c8c9 = L.marker(
+                [55.7260032289871, 37.420862837342554],
+                {
+}
+            ).addTo(feature_group_351602b9176930236ec230af49c212c5);
+        
+    
+            var icon_fc5f8f15672faa1603ede5baab87ce55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f8a569bd4d1bf7a1ee9c26f5baa476f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6df57f396350180936cab6594f1e8ee5 = $(`<div id="html_6df57f396350180936cab6594f1e8ee5" style="width: 100.0%; height: 100.0%;">         <b>Центр-ЮССТ НОУ</b><br>         Тип: Школа<br>         Расстояние до ЖК: 801 м         </div>`)[0];
+                popup_5f8a569bd4d1bf7a1ee9c26f5baa476f.setContent(html_6df57f396350180936cab6594f1e8ee5);
+            
+        
+
+        marker_776503870678688d5467dee89398c8c9.bindPopup(popup_5f8a569bd4d1bf7a1ee9c26f5baa476f)
+        ;
+
+        
+    
+    
+                marker_776503870678688d5467dee89398c8c9.setIcon(icon_fc5f8f15672faa1603ede5baab87ce55);
+            
+    
+            var marker_330288106004a6d51da8443c2a213372 = L.marker(
+                [55.724783431513245, 37.44392390428371],
+                {
+}
+            ).addTo(feature_group_351602b9176930236ec230af49c212c5);
+        
+    
+            var icon_f93633e04efe944b953d796dbf36fe8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7af155955ac75f1c58de6ddf2908c4dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_abcf8cf2716936d5f5cc707a0d190987 = $(`<div id="html_abcf8cf2716936d5f5cc707a0d190987" style="width: 100.0%; height: 100.0%;">         <b>Школа №888</b><br>         Тип: Школа<br>         Расстояние до ЖК: 760 м         </div>`)[0];
+                popup_7af155955ac75f1c58de6ddf2908c4dc.setContent(html_abcf8cf2716936d5f5cc707a0d190987);
+            
+        
+
+        marker_330288106004a6d51da8443c2a213372.bindPopup(popup_7af155955ac75f1c58de6ddf2908c4dc)
+        ;
+
+        
+    
+    
+                marker_330288106004a6d51da8443c2a213372.setIcon(icon_f93633e04efe944b953d796dbf36fe8d);
+            
+    
+            var marker_80d6f52dbea3228be8298f4cbd54bc9e = L.marker(
+                [55.72982182331067, 37.43316449454055],
+                {
+}
+            ).addTo(feature_group_351602b9176930236ec230af49c212c5);
+        
+    
+            var icon_56f96af81d2bdda93616a8df6ec1b4f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_023d253d37217f1725cb4e386451065b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_33bad7deef2097e2b2532ba673b03e04 = $(`<div id="html_33bad7deef2097e2b2532ba673b03e04" style="width: 100.0%; height: 100.0%;">         <b>спецшкола № 6</b><br>         Тип: Школа<br>         Расстояние до ЖК: 133 м         </div>`)[0];
+                popup_023d253d37217f1725cb4e386451065b.setContent(html_33bad7deef2097e2b2532ba673b03e04);
+            
+        
+
+        marker_80d6f52dbea3228be8298f4cbd54bc9e.bindPopup(popup_023d253d37217f1725cb4e386451065b)
+        ;
+
+        
+    
+    
+                marker_80d6f52dbea3228be8298f4cbd54bc9e.setIcon(icon_56f96af81d2bdda93616a8df6ec1b4f4);
+            
+    
+            var marker_f6e13dd9e99bb9e0aa8583b74c26b995 = L.marker(
+                [55.729167797753625, 37.427253211537604],
+                {
+}
+            ).addTo(feature_group_351602b9176930236ec230af49c212c5);
+        
+    
+            var icon_158bb73b864d7463b29600855bb4345c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e05febdab4f0c8e0611c2f77dbadadf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14383b420da17a76cdfc7bae4002dde9 = $(`<div id="html_14383b420da17a76cdfc7bae4002dde9" style="width: 100.0%; height: 100.0%;">         <b>Школа № 808</b><br>         Тип: Школа<br>         Расстояние до ЖК: 352 м         </div>`)[0];
+                popup_6e05febdab4f0c8e0611c2f77dbadadf.setContent(html_14383b420da17a76cdfc7bae4002dde9);
+            
+        
+
+        marker_f6e13dd9e99bb9e0aa8583b74c26b995.bindPopup(popup_6e05febdab4f0c8e0611c2f77dbadadf)
+        ;
+
+        
+    
+    
+                marker_f6e13dd9e99bb9e0aa8583b74c26b995.setIcon(icon_158bb73b864d7463b29600855bb4345c);
+            
+    
+            var marker_ba24bbe8ba83ca85284b290d002073e3 = L.marker(
+                [55.736938704665945, 37.427537202828695],
+                {
+}
+            ).addTo(feature_group_351602b9176930236ec230af49c212c5);
+        
+    
+            var icon_351ecdc32f6397680a74cf8afeebfc00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4538448ac172c97dd66ca279f0c8e4dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eef2d79b6ba24b4de044e9fdeb66c051 = $(`<div id="html_eef2d79b6ba24b4de044e9fdeb66c051" style="width: 100.0%; height: 100.0%;">         <b>Школа № 887. Учебный корпус № 3</b><br>         Тип: Школа<br>         Расстояние до ЖК: 921 м         </div>`)[0];
+                popup_4538448ac172c97dd66ca279f0c8e4dd.setContent(html_eef2d79b6ba24b4de044e9fdeb66c051);
+            
+        
+
+        marker_ba24bbe8ba83ca85284b290d002073e3.bindPopup(popup_4538448ac172c97dd66ca279f0c8e4dd)
+        ;
+
+        
+    
+    
+                marker_ba24bbe8ba83ca85284b290d002073e3.setIcon(icon_351ecdc32f6397680a74cf8afeebfc00);
+            
+    
+            var marker_f1efc2f8d733372c74a5a5974ffa74e3 = L.marker(
+                [55.73239255, 37.42331875],
+                {
+}
+            ).addTo(feature_group_351602b9176930236ec230af49c212c5);
+        
+    
+            var icon_8b0c7ea4a066f2f54647c1eb0576ea18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8482de5e336d8f55ad7c932258c3c66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d34c2766139c6bea6b26d5c0fd91b63 = $(`<div id="html_6d34c2766139c6bea6b26d5c0fd91b63" style="width: 100.0%; height: 100.0%;">         <b>Школа № 806. Корпус 1</b><br>         Тип: Школа<br>         Расстояние до ЖК: 700 м         </div>`)[0];
+                popup_a8482de5e336d8f55ad7c932258c3c66.setContent(html_6d34c2766139c6bea6b26d5c0fd91b63);
+            
+        
+
+        marker_f1efc2f8d733372c74a5a5974ffa74e3.bindPopup(popup_a8482de5e336d8f55ad7c932258c3c66)
+        ;
+
+        
+    
+    
+                marker_f1efc2f8d733372c74a5a5974ffa74e3.setIcon(icon_8b0c7ea4a066f2f54647c1eb0576ea18);
+            
+    
+            var marker_69d082e515f8ace2ace2ae80d5cca4eb = L.marker(
+                [55.732446842429745, 37.42151074672575],
+                {
+}
+            ).addTo(feature_group_351602b9176930236ec230af49c212c5);
+        
+    
+            var icon_79ae34faf357d4a3aa2bafd45361fcbc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97186c2aaa5fc40c678a95537ddcecff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b55e0e8fc64764f18ac233e9be0340f = $(`<div id="html_7b55e0e8fc64764f18ac233e9be0340f" style="width: 100.0%; height: 100.0%;">         <b>Школа № 806. Корпус 2</b><br>         Тип: Школа<br>         Расстояние до ЖК: 763 м         </div>`)[0];
+                popup_97186c2aaa5fc40c678a95537ddcecff.setContent(html_7b55e0e8fc64764f18ac233e9be0340f);
+            
+        
+
+        marker_69d082e515f8ace2ace2ae80d5cca4eb.bindPopup(popup_97186c2aaa5fc40c678a95537ddcecff)
+        ;
+
+        
+    
+    
+                marker_69d082e515f8ace2ace2ae80d5cca4eb.setIcon(icon_79ae34faf357d4a3aa2bafd45361fcbc);
+            
+    
+            var marker_cdb0b5daf70dcefc10802684fa5b0db2 = L.marker(
+                [55.73220699259608, 37.43935891625543],
+                {
+}
+            ).addTo(feature_group_351602b9176930236ec230af49c212c5);
+        
+    
+            var icon_3f34a2332aeb390c042cfd9d0580924a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c80d280efd1cf8c284113d2aed6bf1d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5f8071e3b9504755d4786ed74983df8 = $(`<div id="html_b5f8071e3b9504755d4786ed74983df8" style="width: 100.0%; height: 100.0%;">         <b>Школа № 887. Учебный корпус № 1</b><br>         Тип: Школа<br>         Расстояние до ЖК: 461 м         </div>`)[0];
+                popup_c80d280efd1cf8c284113d2aed6bf1d2.setContent(html_b5f8071e3b9504755d4786ed74983df8);
+            
+        
+
+        marker_cdb0b5daf70dcefc10802684fa5b0db2.bindPopup(popup_c80d280efd1cf8c284113d2aed6bf1d2)
+        ;
+
+        
+    
+    
+                marker_cdb0b5daf70dcefc10802684fa5b0db2.setIcon(icon_3f34a2332aeb390c042cfd9d0580924a);
+            
+    
+            feature_group_351602b9176930236ec230af49c212c5.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+            var layer_control_3ae4d4ca7e6160226ea5ef349fe0bf16_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_af0852eedce25eda8b766e4e7b5b2374,
+                },
+                overlays :  {
+                    "\u0411\u0443\u0444\u0435\u0440 1000 \u043c" : geo_json_64ecface86bec7385a0bb1e461a07d75,
+                    "\u041a\u0430\u0444\u0435" : feature_group_a7fc9315287275807311436ce901a99b,
+                    "\u041f\u043e\u043b\u0438\u043a\u043b\u0438\u043d\u0438\u043a\u0430" : feature_group_fed98741a846e611c8e3a809c11dc7c1,
+                    "\u0421\u043f\u043e\u0440\u0442\u0437\u0430\u043b" : feature_group_a6e51073f1d197e2dd8a1d0c3934957f,
+                    "\u0411\u043e\u043b\u044c\u043d\u0438\u0446\u0430" : feature_group_f6a9dfd7d9c74efbe8cfd8a93fe0b320,
+                    "\u0414\u0435\u0442\u0441\u043a\u0438\u0439 \u0441\u0430\u0434" : feature_group_00bc315c95df1269330bc5b617c176d7,
+                    "\u041c\u0435\u0442\u0440\u043e" : feature_group_c751b517f456e6e9645ef76a69f31606,
+                    "\u0428\u043a\u043e\u043b\u0430" : feature_group_351602b9176930236ec230af49c212c5,
+                },
+            };
+            let layer_control_3ae4d4ca7e6160226ea5ef349fe0bf16 = L.control.layers(
+                layer_control_3ae4d4ca7e6160226ea5ef349fe0bf16_layers.base_layers,
+                layer_control_3ae4d4ca7e6160226ea5ef349fe0bf16_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+
+        
+    
+            var mouse_position_fe31d75ad3e8d5734531b1c4ae10ef23 = new L.Control.MousePosition(
+                {
+  "position": "bottomright",
+  "separator": " | ",
+  "emptyString": "Unavailable",
+  "lngFirst": false,
+  "numDigits": 5,
+  "prefix": "\u041a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u044b:",
+}
+            );
+            mouse_position_fe31d75ad3e8d5734531b1c4ae10ef23.options["latFormatter"] =
+                function(num) {return L.Util.formatNum(num, 5);};
+            mouse_position_fe31d75ad3e8d5734531b1c4ae10ef23.options["lngFormatter"] =
+                function(num) {return L.Util.formatNum(num, 5);};
+            map_84ebc53d8cde20af1211e9bc464bf8b4.addControl(mouse_position_fe31d75ad3e8d5734531b1c4ae10ef23);
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topright",
+  "title": "\u041d\u0430 \u0432\u0435\u0441\u044c \u044d\u043a\u0440\u0430\u043d",
+  "titleCancel": "\u0412\u044b\u0439\u0442\u0438 \u0438\u0437 \u043f\u043e\u043b\u043d\u043e\u044d\u043a\u0440\u0430\u043d\u043d\u043e\u0433\u043e \u0440\u0435\u0436\u0438\u043c\u0430",
+  "forceSeparateButton": true,
+}
+            ).addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+            tile_layer_af0852eedce25eda8b766e4e7b5b2374.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+                marker_3a2a4ba32bce6c4f9e0110c53d8fef17.setIcon(icon_d68c745d81c066c6ebfa6c6ce5a40733);
+            
+    
+            geo_json_64ecface86bec7385a0bb1e461a07d75.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+                marker_8eb75a1b41eccde70da7d34511c3a214.setIcon(icon_91fc15a84e81ba0f3aae46eb2b0ffec7);
+            
+    
+            feature_group_a7fc9315287275807311436ce901a99b.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+                marker_5dba70ea2278cfe7e69142dda0ff3393.setIcon(icon_2ebe15bfe726eab04fb57fce1db0b32c);
+            
+    
+                marker_281e90b40d4d4c67cd7386b082682cbd.setIcon(icon_be5f09d4c8c944204d0d5b4b58217372);
+            
+    
+                marker_f00c66d3dd2479fd273a316fcf07fb62.setIcon(icon_df5f9ad12bb0524183dccb15e40948b4);
+            
+    
+                marker_5a6966628db6cde9c7c4bff6467a48dd.setIcon(icon_a0b29df635e266224bffc98cbbecf667);
+            
+    
+                marker_c78ab02a91755aba6d6d5ffdd3e9ff8d.setIcon(icon_f3da1cbfbd90f7bca58fb7f7dfa306ed);
+            
+    
+            feature_group_fed98741a846e611c8e3a809c11dc7c1.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+                marker_96a2835b0f978380bac9ffe17d13e3ec.setIcon(icon_a67916af711aeb3e76b56a43790b8f49);
+            
+    
+            feature_group_a6e51073f1d197e2dd8a1d0c3934957f.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+                marker_0a45fd913b6438f8bbe84e52e5df1e26.setIcon(icon_36cb32a7744fd51bf4c088b4ff028480);
+            
+    
+            feature_group_f6a9dfd7d9c74efbe8cfd8a93fe0b320.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+                marker_77b0ce8ba033753362cca5f8a4e26b1b.setIcon(icon_99d2f0de55956484b3079f86eb8f43b7);
+            
+    
+                marker_cab08bb488d4aea344746b7745ab6165.setIcon(icon_6f3fc806a297866c7bfc2b4ff12d8501);
+            
+    
+                marker_d62d99077fe8125427f740e79713f998.setIcon(icon_b2769cbf001397adf505f2d01cbed64c);
+            
+    
+                marker_e91dae1e0527f7a5eef754a24ceef1c9.setIcon(icon_bb5b568662491c05546740cce6f7c1e6);
+            
+    
+                marker_858518a0df178035410f2c4d446435fb.setIcon(icon_4001955d9a64bb11f9ce3664b01d011c);
+            
+    
+                marker_9fc3cb35d6455ae61c6dab30e9cf8871.setIcon(icon_9661de4cdbecef8b9a2215435a651f37);
+            
+    
+                marker_ff900ad4358826c4c1d9f00804eb9d41.setIcon(icon_b02a0151f136cb24d05ecc82d522a36c);
+            
+    
+                marker_dc40ea6089a4acc4fbc121eef3653107.setIcon(icon_fa97f969081b9d41d40a8ceeef0f5419);
+            
+    
+                marker_be1d750c19449292745f5cb2ec099320.setIcon(icon_fd498dd174e237b85779889e497e226f);
+            
+    
+            feature_group_00bc315c95df1269330bc5b617c176d7.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+                marker_d488185220740434bb389c43eb8454a3.setIcon(icon_f7fdf63fdc0f9413a862f141e583d0eb);
+            
+    
+                marker_c7f8e0de13a5313377e77dfff91098e5.setIcon(icon_17ae257eacc2b51e2f743921f1a5fec4);
+            
+    
+                marker_a4ba670fbaa46eb44d062b92c9c37fb1.setIcon(icon_fbaa67196abe23f585022fef799acbb1);
+            
+    
+                marker_7612061b4ac95b4acfd97072d97e906b.setIcon(icon_5e525be1dd80d6f7c2f67aab383947b3);
+            
+    
+                marker_4f4fefccd8b6cc4c82c8399a76fc082a.setIcon(icon_48af4cd3ede9be72bca41d23953a35a7);
+            
+    
+                marker_8342363c88095d84c6537429886cba73.setIcon(icon_61a232a471e42dd930cfdf04e9ce7257);
+            
+    
+                marker_a7b3c69e5dedcd44d2984f9fc36c1473.setIcon(icon_4e9bb7dbaac8c89741979f1551283b8a);
+            
+    
+            feature_group_c751b517f456e6e9645ef76a69f31606.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+    
+                marker_e4fef5598989506b0c6611001c19ec10.setIcon(icon_60fa96ef45164a75f726666c54d25c7d);
+            
+    
+                marker_ca30f8850933ef4e65c64a91fb3999f3.setIcon(icon_db76ec9afa76329df10f1fc3b1ef1288);
+            
+    
+                marker_de884b1521e526f235fbab33158a1ca9.setIcon(icon_ac04697c7b3934d5075897500e03ba83);
+            
+    
+                marker_776503870678688d5467dee89398c8c9.setIcon(icon_fc5f8f15672faa1603ede5baab87ce55);
+            
+    
+                marker_330288106004a6d51da8443c2a213372.setIcon(icon_f93633e04efe944b953d796dbf36fe8d);
+            
+    
+                marker_80d6f52dbea3228be8298f4cbd54bc9e.setIcon(icon_56f96af81d2bdda93616a8df6ec1b4f4);
+            
+    
+                marker_f6e13dd9e99bb9e0aa8583b74c26b995.setIcon(icon_158bb73b864d7463b29600855bb4345c);
+            
+    
+                marker_ba24bbe8ba83ca85284b290d002073e3.setIcon(icon_351ecdc32f6397680a74cf8afeebfc00);
+            
+    
+                marker_f1efc2f8d733372c74a5a5974ffa74e3.setIcon(icon_8b0c7ea4a066f2f54647c1eb0576ea18);
+            
+    
+                marker_69d082e515f8ace2ace2ae80d5cca4eb.setIcon(icon_79ae34faf357d4a3aa2bafd45361fcbc);
+            
+    
+                marker_cdb0b5daf70dcefc10802684fa5b0db2.setIcon(icon_3f34a2332aeb390c042cfd9d0580924a);
+            
+    
+            feature_group_351602b9176930236ec230af49c212c5.addTo(map_84ebc53d8cde20af1211e9bc464bf8b4);
+        
+</script>
+</html>
